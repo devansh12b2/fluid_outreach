@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Fluid Outreach</title>
         <style>
-            .parallax {
+            .parallax {    
             /* The image used */
             background-image: url("https://images.unsplash.com/photo-1597176262950-3d8d26f10e80?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80");
 
