@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Streaklines</title>
+        <style>
+            .sidenav {
+                height: 100%; width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0px;
+                background-color:brown;
+                overflow-x: hidden;
+                padding-top: 60px;
+            }
+
+            .sidenav a {
+              display:contents;  
+            }
+
+           .sidenav a:hover {
+               color: blue;
+           }
+
+           .sidenav .closebtn {
+            position:relative;
+            top: 0px;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+             }
+            h4{
+                font-size: 200%;
+                font-style: italic;
+                text-decoration: underline;
+            }
+            p{
+                font-size: 150%;
+            }
+            body{
+                background-image: linear-gradient(to right top, #a9bef6, #22d1ff, #00e3ff, #00edbc, #31ed4f);
+            }
+            a:link, a:visited {
+                               
+                               color:greenyellow;
+                               padding: 30px 50px;
+                               text-align: center;
+                               text-decoration:wavy;
+                               display: block;
+                               font-size: 150%;
+                               font-family: 'Times New Roman', Times, serif;
+            }
+            a:hover, a:active {
+                               background-color: red;
+            }
+            img {
+             display: block;
+              margin-left: auto;
+             margin-right: auto;
+             }
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="assing.html">Front Page</a>
+            <a href="suf.html">Steady & Unsteady Flow</a>
+            <a href="streamline.html">Streamlines</a>
+            <a href="pathlines.html">Pathlines</a>
+            <a href="abt.html">About</a>
+          </div>
+    
+          <div id="main">
+            
+            <span style="font-size: 50px;cursor:pointer;color: rgb(192, 255, 180);" onclick="openNav()">&#9776; OPEN</span>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+        <h4>Streakline</h4>
+        <br><br><img src="stream-lines-and-streak-lines-5-638.jpg" alt="error loading image"><br><br>
+        <p>
+            If we focus on one particular section of fluid flow then after certian period of time we would have
+            number of identifiable fluid particles in the flow, all of which had, at some time, passed through one fixed location
+            in space. The line joining these fluid particles is defined as a streakline.
+        </p>
+        <h4>Equation of streakline</h4>
+        <p style="text-align: center; font-size: x-large;"><i>x=x<sub>inj</sub>+∫∨.dt</i></p>
+        <p> where x<sub>inj</sub> is position of injection point.</p>
+        <p>For Steady flow, streaklines, pathlines and streamlines all are identical.</p>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>About</title>
+        <style>
+            .sidenav {
+                height: 100%; width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0px;
+                background-color:brown;
+                overflow-x: hidden;
+                padding-top: 60px;
+            }
+
+            .sidenav a {
+              display:contents;  
+            }
+
+           .sidenav a:hover {
+               color: blue;
+           }
+
+           .sidenav .closebtn {
+            position:relative;
+            top: 0px;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+             }
+            body {
+                background-image: linear-gradient(to right top, #bbce5d, #93cf73, #6ccc8d, #49c7a5, #32c0b8);
+            }
+            a:link, a:visited {
+                               
+                               color:greenyellow;
+                               padding: 30px 50px;
+                               text-align: center;
+                               text-decoration:wavy;
+                               display: block;
+                               font-size: 150%;
+                               font-family: 'Times New Roman', Times, serif;
+            }
+            a:hover, a:active {
+                               background-color: red;
+            }
+            table{
+                 font-size: 350%;
+                 text-align: center;
+             }
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="assing.html">Front Page</a>
+            <a href="suf.html">Steady & Unsteady Flow</a>
+            <a href="streamline.html">Streamlines</a>
+            <a href="pathlines.html">Pathlines</a>
+            <a href="streakline.html">Streaklines</a>
+            
+          </div>
+    
+          <div id="main">
+            
+            <span style="font-size: 50px;cursor:pointer;color: rgb(192, 255, 180);" onclick="openNav()">&#9776; OPEN</span>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+          <h1 style="text-align: center;text-decoration: underline;font-size: 350%;"><b>Important Instruction</b></h1>
+          <p style="font-size: 250%;text-align: center;">This webpage is not optimized for mobile or tablets</p>
+          <br>
+          <br>
+          <table style="width:100%" >
+              <tr>
+                <th>Devansh Mishra</th>
+              </tr>
+              <tr>
+                  <td>20045036</td>
+              </tr>
+              <tr>
+                  <td>Chemical Engineering</td>
+              </tr>
+              <tr>
+                  <td>devansh.mishra.che20@itbhu.ac.in</td>
+              </tr>
+          </table>
+    </body>
+</html>

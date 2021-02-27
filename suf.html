@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Steady & Unsteady Flow</title>
+        <style>
+            .sidenav {
+                height: 100%; width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0px;
+                background-color:brown;
+                overflow-x: hidden;
+                padding-top: 60px;
+            }
+
+            .sidenav a {
+              display:contents;  
+            }
+
+           .sidenav a:hover {
+               color: blue;
+           }
+
+           .sidenav .closebtn {
+            position:relative;
+            top: 0px;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+             }
+            table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            }
+            th, td {
+            padding: 5px;
+            text-align: left;
+            }
+            h4{
+                font-size: 200%;
+                font-style: italic;
+                text-decoration: underline;
+            }
+            p{
+                font-size: 150%;
+            }
+            body
+            {
+                background-image: linear-gradient(to right top, #b0c0b7, #81bab4, #3fb1c4, #00a2dc, #128deb);
+            }
+            a:link, a:visited {
+                               
+                               color:greenyellow;
+                               padding: 30px 50px;
+                               text-align: center;
+                               text-decoration:wavy;
+                               display: block;
+                               font-size: 150%;
+                               font-family: 'Times New Roman', Times, serif;
+            }
+            a:hover, a:active {
+                               background-color: red;
+            }
+            img {
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+             }
+             table{
+                 font-size: 150%;
+             }
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="assing.html">Front Page</a>
+            <a href="streamline.html">Streamlines</a>
+            <a href="pathlines.html">Pathlines</a>
+            <a href="streakline.html">Streaklines</a>
+            <a href="abt.html">About</a>
+          </div>
+    
+          <div id="main">
+            
+            <span style="font-size: 50px;cursor:pointer;color: rgb(192, 255, 180);" onclick="openNav()">&#9776; OPEN</span>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+        <p>
+            To understand about steady and unsteady flow first of all we have to know about velocity field.
+        </p>
+        <h4>Velocity Field</h4>
+        <p>Velocity is a vector quantity, thus velocity filed is a vector field. We can represent it as:-
+        </p>
+        <p style="text-align: center; font-size: x-large;"><i>∨⃗=∨⃗(x,y,z,t)</i></p>
+        <p> It indicates the velocity of a fluid
+            particle that is passing through the point x, y, z at time instant t, in the Eulerian sense.
+            We can keep measuring the velocity at the same point or choose any other point x, y, z
+            at the next time instant; the point x, y, z is not the ongoing position of an individual
+            particle, but a point we choose to look at.
+        </p>
+        <h4>Steady Flow</h4>
+        <br><br>
+         <img src="vel_anim_1604489979.gif" alt="error loading page" class="center" ><br><br>
+
+        <p>
+            If  properties of a field do not change with time at any point, then the flow is termed as steady flow.
+            Mathematically it can be stated as:
+        </p>
+        <p style="text-align: center; font-size: x-large;"><i>∂N∕∂t=0</i></p>
+        <p>where N represent any fluid property.Thus steady flow can be written as:</p>
+        <p style="text-align: center; font-size: x-large;"><i>∂ρ∕∂t=0  or  ρ=ρ(x,y,z)</i></p>
+        <p>and</p>
+        <p style="text-align: center; font-size: x-large;"><i>∂∨⃗/∂t=0  or  ∨⃗=∨⃗(x,y,z)</i></p>
+        <p>
+            Properties may vary from one point to another, but they remain constant with time at each every
+           point then the flow is Steady flow. Temporal accelaration is zero at any instant.
+        </p>
+        <p style="text-decoration:underline;"><b>Example:-</b></p>
+        <br> <br> <img src="Rba1f7b40b402d2a275d7a30746cc1e11.jpg" alt="error loading image" class="center"><br><br>
+        <p>
+           Fluid flowing through<em> pipes, nozzles, diffusers, and pumps</em> is example of steady flow.
+        </p>
+        <h4>Unsteady Flow</h4>
+        <br> <br> <img src="OIP.jpg" alt="error loading image"><br><br>
+        <p>
+            If properties at a point vary with time then the flow is called unsteady or transient flow.
+            Temporal accelaration is non-zero at some instant.
+        </p>
+        <p style="text-decoration:underline;"><b>Example:-</b></p>
+        <p>
+            Fluid flowing through <i>tidal waves, running taps, rivers and ocean currents</i> is example of unsteady flow.
+        </p>
+        <h4>Uniform Flow</h4>
+        <p>
+            If velocity is constant throughout the flow field i.e. independent of all space co-ordinates then the flow is called Uniform flow.
+            Convective accelaration is zero.
+        </p>
+        <h4>Non-Uniform Flow</h4>
+        <p>
+            If velocity is inconsistenet throughout the flow field i.e. dependent on all space co-ordinates then the flow is called Non-Uniform flow.
+            Convective accelaration is non-zero.
+        </p>
+        <br><br> <img src="mix.gif" alt="error loading image"><br><br>
+        <table style="width:100%">
+        <tr>
+            <th>Types of Flows</th>
+            <th>Temporal Accelaration</th>
+            <th>Convective Accelaration</th>
+        </tr>
+        <tr>
+            <td>Steady-Uniform Flow</td>
+            <td>Zero</td>
+            <td>Zero</td>
+        </tr>
+        <tr>
+            <td>Steady-Non Uniform Flow</td>
+            <td>Zero</td>
+            <td>Non-Zero</td>
+        </tr>
+        <tr>
+            <td>UnSteady-Uniform Flow</td>
+            <td>Non-Zero</td>
+            <td>Zero</td>
+        </tr>
+        <tr>
+            <td>UnSteady-Non Uniform Flow</td>
+            <td>Non-Zero</td>
+            <td>Non-Zero</td>
+        </tr>
+        </table>
+    </body>
+</html>

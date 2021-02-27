@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pathlines</title>
+        <style>
+            .sidenav {
+                height: 100%; width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0px;
+                background-color:brown;
+                overflow-x: hidden;
+                padding-top: 60px;
+            }
+
+            .sidenav a {
+              display:contents;  
+            }
+
+           .sidenav a:hover {
+               color: blue;
+           }
+
+           .sidenav .closebtn {
+            position:relative;
+            top: 0px;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+             }
+            h4{
+                font-size: 200%;
+                font-style: italic;
+                text-decoration: underline;
+            }
+            p{
+                font-size: 150%;
+            }
+            body{
+                background-image: linear-gradient(to right top, #3ffc91, #00e6c1, #00cbda, #00add8, #518ebc);
+            }
+            a:link, a:visited {
+                               
+                               color:greenyellow;
+                               padding: 30px 50px;
+                               text-align: center;
+                               text-decoration:wavy;
+                               display: block;
+                               font-size: 150%;
+                               font-family: 'Times New Roman', Times, serif;
+            }
+            a:hover, a:active {
+                               background-color: red;
+            }
+            img {
+             display: block;
+              margin-left: auto;
+             margin-right: auto;
+             }
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="assing.html">Front Page</a>
+            <a href="suf.html">Steady & Unsteady Flow</a>
+            <a href="streamline.html">Streamlines</a>
+            <a href="streakline.html">Streaklines</a>
+            <a href="abt.html">About</a>
+          </div>
+    
+          <div id="main">
+            
+            <span style="font-size: 50px;cursor:pointer;color: rgb(192, 255, 180);" onclick="openNav()">&#9776; OPEN</span>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+        <h4>Pathlines</h4>
+        <br><br><img src="a-Pathlines-and-the-corresponding-speeds-on-the-middle-cross-section-of-the-heat-sink.png" alt="error loading image"><br><br>
+        <p>
+            If we observe a single particle via Langrangian approach(observing each particle individually)
+            then the trajectory traced by that particle is called its pathline.
+        </p>
+        <h4>Equation of pathline</h4>
+        <p style="text-align: center; font-size: x-large;"><i>∨⃗=∨⃗(s,t)=ds/dt</i></p>
+        <p>The path of motion:-</p>
+        <p style="text-align: center; font-size: x-large;"><i>⇒  ⃗s=∫∨⃗(s,t)dt</i></p>
+        <p>Unlike streamlines pathlines can cross each other.</p>
+    </body>
+</html>

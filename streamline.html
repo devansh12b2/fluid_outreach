@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Streamlines</title>
+        <style>
+            .sidenav {
+                height: 100%; width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0px;
+                background-color:brown;
+                overflow-x: hidden;
+                padding-top: 60px;
+            }
+
+            .sidenav a {
+              display:contents;  
+            }
+
+           .sidenav a:hover {
+               color: blue;
+           }
+
+           .sidenav .closebtn {
+            position:relative;
+            top: 0px;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+             }
+            h4{
+                font-size: 200%;
+                font-style: italic;
+                text-decoration: underline;
+            }
+            p{
+                font-size: 150%;
+            }
+            body{
+                background-image: radial-gradient(circle, #c44cf5, #9682ff, #79a4ff, #82bdfe, #a9cfeb);
+            }
+            a:link, a:visited {
+                               
+                               color:greenyellow;
+                               padding: 30px 50px;
+                               text-align: center;
+                               text-decoration:wavy;
+                               display: block;
+                               font-size: 150%;
+                               font-family: 'Times New Roman', Times, serif;
+            }
+            a:hover, a:active {
+                               background-color: red;
+            }
+            img {
+             display: block;
+              margin-left: auto;
+             margin-right: auto;
+             }
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="assing.html">Front Page</a>
+            <a href="suf.html">Steady & Unsteady Flow</a>
+            <a href="pathlines.html">Pathlines</a>
+            <a href="streakline.html">Streaklines</a>
+            <a href="abt.html">About</a>
+          </div>
+    
+          <div id="main">
+            
+            <span style="font-size: 50px;cursor:pointer;color: rgb(192, 255, 180);" onclick="openNav()">&#9776; OPEN</span>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+      <h4>Streamlines</h4>
+      <br><br><img src="streamline.jpg" alt="error loading image"><br><br>
+      <p>
+          In a flow field the lines that are tangent to the direction of flow at every point in flow field 
+          are called Streamlines.Since the streamlines are tangent to the velocity vector at every point in the flow field, 
+          there can be no flow across a streamline.   It is most comman technique of flow visualisation.
+      </p>  
+      <p>
+          In a steady flow velocity at a point in flow field do not change with time, so streamlines shape do
+          not vary from one instant to other; from this we can say that a particle moves along a single streamline. 
+      </p>
+      <h4>Equation of Streamline</h4>
+      <p style="text-align: center; font-size: x-large;"><i>dx/u=dy/v=dz/ω</i></p>
+      <p>
+          There should not be any cross flow across the streamlines i.e., streamlines should never intersect.
+      </p>
+    </body>
+</html>
