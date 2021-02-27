@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Fluid Outreach</title>
+        <style>
+            .parallax {
+            /* The image used */
+            background-image: url("https://images.unsplash.com/photo-1597176262950-3d8d26f10e80?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80");
+
+             /* Set a specific height */
+             min-height: 500px; 
+
+             /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+             background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+}
+            .sidenav {
+                height: 100%; width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0px;
+                background-color:brown;
+                overflow-x: hidden;
+                padding-top: 60px;
+            }
+
+            .sidenav a {
+              display:contents;  
+            }
+
+           .sidenav a:hover {
+               color: blue;
+           }
+
+           .sidenav .closebtn {
+            position:relative;
+            top: 0px;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+             }
+            h1 {
+                background-color: black;
+                background-size: 100% 100%;
+                color:whitesmoke;
+                text-align: center;
+                text-decoration: wavy;
+                font-size: 600%;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: aqua;
+            }
+            h5 {
+                color:whitesmoke;
+                text-align: left;
+                text-decoration: underline;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 150%;
+            }
+            body{ 
+              background-color: black;
+            }
+
+            a:link, a:visited {
+                               
+                               color:greenyellow;
+                               padding: 30px 50px;
+                               text-align: center;
+                               text-decoration:wavy;
+                               display: block;
+                               font-size: 150%;
+                               font-family: 'Times New Roman', Times, serif;
+            }
+            a:hover, a:active {
+                               background-color: red;
+            }
+            /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1000px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <a href="suf.html">Steady & Unsteady Flow</a>
+            <a href="streamline.html">Streamlines</a>
+            <a href="pathlines.html">Pathlines</a>
+            <a href="streakline.html">Streaklines</a>
+            <a href="abt.html">About</a>
+          </div>
+    
+          <div id="main">
+            
+            <span style="font-size: 50px;cursor:pointer;color: rgb(192, 255, 180);" onclick="openNav()">&#9776; OPEN</span>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+          <div class="parallax"></div>
+        <h1><i>Fluid Mechanics</i></h1>
+        <div style="height:200px;background-image: url('https://images.unsplash.com/photo-1482685945432-29a7abf2f466?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzB8fGZsdWlkJTIwZmxvd3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');background-repeat: no-repeat;background-attachment: fixed;background-size: cover;font-size:36px">
+        <h5>Broad Classification of Fluid Flow:-</h5>
+    </div>
+    <div style="height:600px;background-image: url('https://images.unsplash.com/photo-1594671658937-09ac0c285e23?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OTJ8fGZsdWlkfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');background-repeat: no-repeat;background-attachment: fixed;background-size: cover; font-size:36px">
+        <ul style="list-style-type: disc;">
+            <li><a href="suf.html" target="_blank">Steady & Unsteady Flow</a></li>
+            <li><a href="streamline.html" target="_blank">Streamlines</a></li>
+            <li><a href="pathlines.html" target="_blank">Pathlines</a></li>
+            <li><a href="streakline.html" target="_blank">Streaklines</a></li>
+            <li><a href="abt.html" target="_blank">About</a></li>
+        </ul>
+    </div>
+        <div class="parallax"></div>
+    </body>
+</html>
